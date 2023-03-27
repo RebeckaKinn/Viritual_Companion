@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viritual Companion", "Viritual Companion.csproj", "{28D49B29-240F-4BF8-A46F-3DAF237F350B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28D49B29-240F-4BF8-A46F-3DAF237F350B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D49B29-240F-4BF8-A46F-3DAF237F350B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D49B29-240F-4BF8-A46F-3DAF237F350B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D49B29-240F-4BF8-A46F-3DAF237F350B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE59E28D-CADC-43B9-96CF-0EF375E6850B}
+	EndGlobalSection
+EndGlobal
