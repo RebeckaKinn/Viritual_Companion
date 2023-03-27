@@ -5,23 +5,34 @@
         public void InputChoice()
         {
             var input = Console.ReadLine();
-            if (input == "1") ChooseName();
-            else if (input == "2") ChooseType();
-            else if (input == "3") ChooseHealth();
-            else RegeneratePet();
+            if (input == "1") ChooseName(input);
+            else if (input == "2") ChooseType(input);
+            else RegeneratePet(input, null);
         }
 
-        public void ChooseName()
+        public void ChooseName(string input)
         {
             Console.WriteLine("What is your pet's name?");
             var newName = Console.ReadLine();
-            new Pet(newName);
             Console.WriteLine("Saved!");
-            InputChoice();
+            RegeneratePet(input, newName);
         }
-        public void RegeneratePet()
-        {
 
+        public void ChooseType(string input)
+        {
+            Console.WriteLine("What is your pet's breed?");
+            var newType = Console.ReadLine();
+            Console.WriteLine("Saved!");
+            RegeneratePet(input, newType);
+        }
+        public void RegeneratePet(string? input, string? newPetInput)
+        {
+            var mainPlay = new MainPlay();
+            if (input == null && newPetInput == null)
+            {
+                var myNewPet = new Pet();
+                mainPlay.PetStartPage(myNewPet);
+            }
         }
     }
 }
