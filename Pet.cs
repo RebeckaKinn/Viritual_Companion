@@ -15,11 +15,21 @@
             Name = name;
             Type = type;
         }
-        public Pet(string name = "Pinkiepie", string type = "Cat", int life = 10)
+        public Pet(string name = "Pinkiepie", string type = "Cat", int life = 5)
         {
             Name = name;
             Type = type;
             Life = life;
+        }
+
+        public void FeedPet()
+        {
+            Life++;
+        }
+
+        public void PlayWithPet()
+        {
+            Life--;
         }
     }
 
