@@ -6,16 +6,16 @@
         private string Type { get; set; }
         private int Life { get; set; }
 
-        public Pet(string name)
+        public Pet(string name = "Pinkiepie")
         {
             Name = name;
         }
-        public Pet(string name, string type)
+        public Pet(string name = "Pinkiepie", string type = "Cat")
         {
             Name = name;
             Type = type;
         }
-        public Pet(string name, string type, int life)
+        public Pet(string name = "Pinkiepie", string type = "Cat", int life = 10)
         {
             Name = name;
             Type = type;
