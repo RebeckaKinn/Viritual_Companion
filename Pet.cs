@@ -3,14 +3,29 @@
     public class Pet
     {
         private string Name { get; set; }
-        private string Type { get; set; }
+        private string FavFood { get; set; }
         private int Life { get; set; }
 
-        public Pet(string name = "Pinkiepie", string type = "Cat")
+        public Pet(string name = "Pusur", string food = "Lasagna")
         {
             Name = name;
-            Type = type;
+            FavFood = food;
             Life = 5;
+        }
+
+        public string GetName()
+        {
+            return Name;
+        }
+
+        public int GetLife()
+        {
+            return Life;
+        }
+
+        public string GetFood()
+        {
+            return FavFood;
         }
 
         public void FeedPet()
