@@ -2,6 +2,13 @@
 {
     public class Gameplay
     {
+        public void Intro()
+        {
+            Console.WriteLine("WELCOME TO THE DAY CARE\n");
+            Console.WriteLine("Write your new pet's name \n or");
+            Console.WriteLine("push 'enter' to generate a random pet.\n");
+            InputChoice();
+        }
         public void InputChoice()
         {
             var mainPlay = new MainPlay();

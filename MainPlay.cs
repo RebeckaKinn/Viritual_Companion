@@ -24,6 +24,7 @@
         }
         public void PetStartPage(Pet CurrentPet)
         {
+            CheckStats(CurrentPet);
             CurrentPet.ShowStats();
             Menu(CurrentPet);
         }
@@ -42,8 +43,23 @@
         public void QuitGame()
         {
             Console.Clear();
-            var program = new Program();
-            program.Main();
+            var gameplay = new Gameplay();
+            gameplay.Intro();
+        }
+        public void CheckStats(Pet CurrentPet)
+        {
+            var energyLevel = CurrentPet.GetEnergy();
+            if (energyLevel > 0) GameOver(CurrentPet);
+        }
+
+        public void GameOver(Pet CurrentPet)
+        {
+            Console.WriteLine("GAME OVER\n");
+            Console.WriteLine($"Poor little {CurrentPet.GetName} lot all it's energy");
+            Console.WriteLine("and went to sleep.\n");
+            Console.WriteLine("Press any key to continue.");
+            Console.ReadKey();
+            QuitGame();
         }
     }
 }
