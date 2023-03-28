@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public void Main()
         {
             Console.WriteLine("WELCOME TO THE DAY CARE\n");
             Console.WriteLine("Write your new pet's name \n or");
