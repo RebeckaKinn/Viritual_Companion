@@ -2,16 +2,16 @@
 {
     public class PetList
     {
-        public List<Pet> Pets { get; set; }
+        private List<Pet> _pets { get; set; }
 
         public PetList()
         {
-            Pets = new List<Pet>();
+            _pets = new List<Pet>();
         }
 
-        public void AddPet()
+        public void AddPet(Pet newPet)
         {
-
+            _pets.Add(newPet);
         }
     }
 }

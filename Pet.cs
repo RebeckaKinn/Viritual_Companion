@@ -2,40 +2,60 @@
 {
     public class Pet
     {
-        private string Name { get; set; }
-        private string FavFood { get; set; }
-        private int Life { get; set; }
+        private string _name { get; set; }
+        private string _favFood { get; set; }
+        private int _energy { get; set; }
 
-        public Pet(string name = "Pusur", string food = "Lasagna")
+        public Pet()
         {
-            Name = name;
-            FavFood = food;
-            Life = 5;
+            _name = "Pusur";
+            _favFood = "Lasagna";
+            _energy = 5;
+        }
+
+        public Pet(string name = "Pusur")
+        {
+            _name = name;
         }
 
         public string GetName()
         {
-            return Name;
+            return _name;
         }
 
-        public int GetLife()
+
+        public int GetEnergy()
         {
-            return Life;
+            return _energy;
         }
 
         public string GetFood()
         {
-            return FavFood;
+            return _favFood;
         }
 
-        public void FeedPet()
+        public void FeedPet(string food)
         {
-            Life++;
+            if (food == _favFood)
+            {
+                Console.WriteLine($"{_name} is super stoked and devours all of the {_favFood}!");
+                _energy++;
+            }
+            else
+            {
+                Console.WriteLine($"Unsure, {_name} sniffs on the {food} and gives you a dissapointed look.");
+            }
         }
 
         public void PlayWithPet()
         {
-            Life--;
+            Console.WriteLine($"{_name} loves playing! {_name} gets a little tired tho.");
+            _energy--;
+        }
+
+        public void ShowStats()
+        {
+            Console.WriteLine($"Name: {_name}\nEnergy: {_energy}");
         }
     }
 

@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("WELCOME TO THE DAY CARE\n");
-            Console.WriteLine("1 - Custom name");
-            Console.WriteLine("Push anything else to GENERATE RANDOM PET");
+            Console.WriteLine("Write your new pet's name \n or");
+            Console.WriteLine("push 'enter' to generate a random pet.\n");
             var gameplay = new Gameplay();
             gameplay.InputChoice();
         }
